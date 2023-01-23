@@ -1,4 +1,4 @@
-@import 'assets/fonts/PlusJakartaSans-VariableFont_wght.ttf';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
 * {
     margin: 0;
@@ -18,10 +18,6 @@
     --dark-grayish-blue: hsl(219, 12%, 42%);
     --very-dark-blue: hsl(224, 21%, 14%);
 } 
-
-ol, ul {
-    list-style: none;
-}
 
 a {
     text-decoration: none;
@@ -48,17 +44,127 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 2.5rem 0 2rem 0;
+}
+
+.header .read-all {
+    color: var(--dark-grayish-blue);
+}
+
+.header .read-all:hover {
+    color: var(--blue);
+}
+
+.header-infos {
+    display: flex;
+}
+
+.header-infos span:first-child {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+    margin-right: .75rem;
+}
+
+.header-infos #notifications-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 1.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: .5rem;
+}
+
+.container {
+    max-width: 46rem;
+    padding: 0 1.125rem 0 1.125rem;
+}
+
+.notification {
+    margin-bottom: .75rem;
+}
+
+.notification img {
+    height: 2.375rem;
+    width: 2.375rem;
+    margin-right: 1rem;
 }
 
 .notification-paragraph {
     display: flex;
-    align-items: center;
+}
+
+.notification-paragraph .profile-name {
+    color: var(--very-dark-blue);
+    font-size: .875rem;
+    font-weight: 800;
+}
+
+.notification-paragraph .profile-name:hover {
+    color: var(--blue);
+    transition: ease .3s;
+}
+
+.notification-paragraph p {
+    color: var(--dark-grayish-blue);
+    font-size: .9;
+}
+
+.notification-paragraph .posts {
+    color: var(--dark-grayish-blue);
+    font-size: .875rem;
+    font-weight: 800;
+}
+
+.notification-paragraph .posts:hover {
+    color: var(--blue);
+    transition: ease .3s;
+}
+
+.paragraph .time {
+    color: var(--grayish-blue);
+    font-size: .875rem;
+    margin-top: .25rem;
+}
+
+.private-message {
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: 1px solid var(--light-grayish-blue-2);
+    padding: 1rem 2rem 1rem 1rem;
+    margin: .75rem 0 2.5rem 3.5rem;
+}
+
+.private-message:hover {
+    background-color: var(--light-grayish-blue-1);
+    cursor: pointer;
+}
+
+.private-message p {
+    color: var(--dark-grayish-blue);
 }
 
 .red-dot {
+    display: inline-block;
     background-color: var(--red);
-    width: .75rem;
-    height: .75rem;
+    width: .5rem;
+    height: .5rem;
     border-radius: 50%;
+    margin-left: .5rem;
+}
+
+.read-notifications {
+    margin-bottom: 2.5rem;
+}
+
+.unread-notifications {
+    display: block;
+}
+
+.unread-bg {
+    background-color: var(--very-light-grayish-blue);
+    padding: 1rem .75rem;
+    border-radius: .5rem;
 }
 
