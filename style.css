@@ -78,11 +78,11 @@ body {
 
 .container {
     max-width: 46rem;
-    padding: 0 1.125rem 0 1.125rem;
+    padding: 0 1.125rem;
 }
 
 .notification {
-    margin-bottom: .75rem;
+    margin-bottom: 3rem;
 }
 
 .notification img {
@@ -108,7 +108,7 @@ body {
 
 .notification-paragraph p {
     color: var(--dark-grayish-blue);
-    font-size: .9;
+    font-size: .875rem;
 }
 
 .notification-paragraph .posts {
@@ -128,12 +128,19 @@ body {
     margin-top: .25rem;
 }
 
+.paragraph .time-c {
+    color: var(--grayish-blue);
+    font-size: .875rem;
+    margin-top: .35rem;
+}
+
 .private-message {
     background-color: var(--white);
     border-radius: .5rem;
     border: 1px solid var(--light-grayish-blue-2);
     padding: 1rem 2rem 1rem 1rem;
     margin: .75rem 0 2.5rem 3.5rem;
+    font-size: .875rem;
 }
 
 .private-message:hover {
@@ -155,16 +162,26 @@ body {
 }
 
 .read-notifications {
-    margin-bottom: 2.5rem;
+    margin: 0 0 0rem .75rem;
 }
 
-.unread-notifications {
+.unread-notification {
     display: block;
+    margin-left: .75rem;
 }
 
 .unread-bg {
     background-color: var(--very-light-grayish-blue);
     padding: 1rem .75rem;
     border-radius: .5rem;
+    margin: 0 0 .75rem 0;
+}
+
+.chess {
+    display: flex;
+}
+
+.chess img {
+    margin: 0 0 0 2rem;
 }
 
