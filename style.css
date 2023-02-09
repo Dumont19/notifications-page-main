@@ -78,7 +78,7 @@ body {
 
 .container {
     max-width: 46rem;
-    padding: 0 1.125rem;
+    padding: 0 1.5rem;
 }
 
 .notification {
@@ -88,7 +88,6 @@ body {
 .notification img {
     height: 2.375rem;
     width: 2.375rem;
-    margin-right: 1rem;
 }
 
 .notification-paragraph {
@@ -122,6 +121,10 @@ body {
     transition: ease .3s;
 }
 
+.profile-img {
+    margin-right: 1rem;
+}
+
 .paragraph .time {
     color: var(--grayish-blue);
     font-size: .875rem;
@@ -131,7 +134,7 @@ body {
 .paragraph .time-c {
     color: var(--grayish-blue);
     font-size: .875rem;
-    margin-top: .35rem;
+    margin-top: .25rem;
 }
 
 .private-message {
@@ -177,11 +180,13 @@ body {
     margin: 0 0 .75rem 0;
 }
 
-.chess {
+.paragraph.chess {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.chess img {
-    margin: 0 0 0 2rem;
+.g-chess {
+    margin-right: 0;
 }
-
