@@ -28,7 +28,6 @@ const markAsRead = () => {
 
     const removeRedDots = () => {
         redDots.forEach(dot => {
-            console.log(dot.style.color)
             if (dot) {
                 dot.remove()
             }

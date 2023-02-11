@@ -82,8 +82,10 @@ body {
 }
 
 .notification {
-    margin-bottom: 3rem;
+    padding: 1rem 0;
+    margin: 0 0 .75rem 0;
 }
+
 
 .notification img {
     height: 2.375rem;
@@ -142,7 +144,7 @@ body {
     border-radius: .5rem;
     border: 1px solid var(--light-grayish-blue-2);
     padding: 1rem 2rem 1rem 1rem;
-    margin: .75rem 0 2.5rem 3.5rem;
+    margin: .75rem 0 1.5rem 3.5rem;
     font-size: .875rem;
 }
 
